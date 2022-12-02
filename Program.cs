@@ -119,7 +119,7 @@ namespace skoropechataniepract
                 File.WriteAllText("C:\\Users\\User\\Desktop\\4json\\filik.json",json);
                 if (key.Key == ConsoleKey.Enter)
                 {
-                    
+                    Console.Clear();
                     nachalo();
                 }
                 
