@@ -117,6 +117,7 @@ namespace skoropechataniepract
                 humans.Add(name);
                 string json = JsonConvert.SerializeObject(humans);
                 File.WriteAllText("C:\\Users\\User\\Desktop\\4json\\filik.json",json);
+                List<Human> result = JsonConvert.DeserializeObject<List<Human>>(json);
                 if (key.Key == ConsoleKey.Enter)
                 {
                     Console.Clear();
