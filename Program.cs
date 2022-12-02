@@ -133,7 +133,7 @@ namespace skoropechataniepract
             {
                 nachalo(); 
             }
-        
+            if (key.Key == ConsoleKey.Escape) Environment.Exit(0);
             Console.ReadLine();
 
         }
