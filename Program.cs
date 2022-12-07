@@ -41,11 +41,7 @@ namespace skoropechataniepract
                 Console.SetCursorPosition(0, 10);
                 Console.Write($"0:{secs}");
                 }
-            if (secs < 10)
-            {
-                Console.SetCursorPosition(0, 10);
-                Console.Write($"0:0{secs}");
-            }
+
             else if ((secs < 10) && (secs > 0))
             {
                 secs--;
@@ -94,13 +90,14 @@ namespace skoropechataniepract
             if (secs == 0)
             {
                 thread.Abort();
+                tabl();
             }
     
         }
         
         public static void tabl()
-        {   if (secs == 0)
-            {
+        {
+            
                 var key = Console.ReadKey();
                 Human name = new Human();
                 name.human = samename;
@@ -124,7 +121,7 @@ namespace skoropechataniepract
                     nachalo();
                 }
                 
-            }
+            
         }
 
         private static void Main(string[] args)
