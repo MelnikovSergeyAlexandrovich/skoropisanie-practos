@@ -120,18 +120,16 @@ namespace skoropechataniepract
                     Console.Clear();
                     nachalo();
                 }
-                
-            
+                else if (key.Key == ConsoleKey.Escape)
+                { 
+                    Environment.Exit(0);  
+                }  
         }
 
         private static void Main(string[] args)
         {
             var key = Console.ReadKey();
-            while (key.Key != ConsoleKey.Escape)
-            {
-                nachalo(); 
-            }
-            if (key.Key == ConsoleKey.Escape) Environment.Exit(0);
+            nachalo();
             Console.ReadLine();
 
         }
